@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Day 2</title>
+    <script src="js2.js"></script>
+    <style>
+        div{
+            text-align:center;
+        }
+    </style>
+
+</head>
+<body>
+        <div>
+            <br>
+            <i id="text"> </i><p id="tip" style="border:3px; border-radius: 1rem; border-width: thin; border-color:#FF0000; color: #130000; font-size:150%;"></p>
+            <script>show_tips()</script>
+        </div>
+        <br><br>
+        <div>
+            <button type="button" onclick="datetime()">Click here for Date and Time</button>
+            <p id="date"> </p>
+        </div>
+        <div>
+            <button type="button" onclick="enter_date()">Click here To enter your date</button>
+        </div>
+        <br><br>
+        <div>
+            <p>Remove Numbers </p>
+            <input  id="arrnum" />
+            <input  id="numremove" />
+            <button type="button" onclick="num_array()">Remove number</button>
+            <p id="arrfinal"></p>
+        </div>
+        <br><br>
+        <div>
+            <p>Count charcters </p>
+            <input  id="arrnum1" />
+            <input  id="numremove1" />
+            <button type="button" onclick="char_array()">Count number</button>
+            <p id="arrfinal1"></p>
+        </div>
+        <div>
+            <p>Sort arrays </p>
+            <input  id="arrnum3" />
+            <button type="button" onclick="arr_sort()">Sort</button>
+            <p id="arrfinal3"></p>
+        </div>
+</body>
+</html>

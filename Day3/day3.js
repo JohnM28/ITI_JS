@@ -23,35 +23,36 @@ function save_cred(){
 
 }
 
-var email
-var t
 var user_name
+var email
+var t1
+var t2
 
 function askname(){
     let con_name = true , con_username = true
     let reg_name = /^([a-z]{3,})$/gi;
     let reg_email = /eg$/gi;
     user_name = prompt("enter your name (Fit the criteria)");
-    t= reg_name.test(user_name.replace(/\s*/g,""));
-    console.log(t);
+    t1= reg_name.test(user_name.replace(/\s*/g,""));
+    console.log(t1);
     while (con_name) {
-        if (t===false) {
+        if (t1===false) {
             user_name = prompt("enter your name correctly");
-            t= reg_name.test(user_name);
-            console.log(t)
+            t1= reg_name.test(user_name);
+            console.log(t1)
         }
         else {
             con_name = false;
         }
     }
     email = prompt("enter your email");
-    t= reg_email.test(email);
-    console.log(t);
-    while (con_username) {
-        if (t === false) {
-            email = prompt("enter your name correctly");
-            t = reg_email.test(email);
-            console.log(t)
+    t2= reg_email.test(email);
+    console.log(t2);
+    while (con_username && email != null) {
+        if (t2 === false) {
+            email = prompt("enter your email correctly");
+            t2 = reg_email.test(email);
+            console.log(t2)
         } else {
             con_username = false;
         }

@@ -7,6 +7,7 @@ function time(){
 
 var OpenedWindow
 
+// works in edge but not in firefox
 function adv() {
     setTimeout(function () { OpenedWindow = window.open('about.html', '_blank', "height=600,width=800"); },
         3000);

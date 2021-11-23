@@ -85,3 +85,25 @@ function resizex2(){
     var size=document.getElementById("search");
      size.setAttribute("style", 'width:200px;')
 }
+
+function changeOpacity(myImage){
+    var opacity =1;
+    var time = setInterval(function(){
+        if (opacity<=0.3){clearInterval(time);
+        }
+        myImage.style.opacity=opacity;
+        opacity =opacity-0.1;
+
+        },100)
+}
+function changeOp(myImage){
+    var opacity = 0.3;
+    var time = setInterval(function(){
+        if (opacity>=1){clearInterval(time);
+        }
+        myImage.style.opacity=opacity;
+        opacity =opacity+0.1;
+
+        },100)
+
+}

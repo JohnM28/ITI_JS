@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="day4.js"></script>
+    <style>
+        div{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Key Alert </p>
+        <input type="text" onmouseup="mouse_pressed(event)" onkeyup="key_pressed(event)"><br>
+        <p id="press"></p>
+    </div>
+    <br><br>
+    <div>
+        <button type="button" onclick="time()" id="clock">Start Clock</button>
+        <input type="text" id="date">
+        <script>
+            document.getElementById("clock").addEventListener("click", function(){alert("clock started")});
+        </script>
+    </div>
+    <br><br><br><br>
+    <div>
+        <form action="thankyou.html" onsubmit="save_cred()" >
+            <label for="UserName">User Name: </label>
+            <input type="text" id="UserName" value="Enter your name" onfocus="border_focus()" onblur="border_outfocus()">
+            <br><br>
+            <label >Email: </label>
+            <input type="email" id="email" size="20" >
+            <br> <br>
+            <label>City: </label>
+            <select>
+            <option>Alex</option>
+            <option>Minia</option>
+            <option selected>Cairo</option>
+            </select>
+            <br><br>
+            <label for="Pass">Password: </label>
+            <input type="password" id="Pass" size="20">
+            <input type="checkbox" name="show" onclick="show_pass()"> show password
+            <br> <br>
+            <label for="Pass">Repeat Password: </label>
+            <input type="password" id="Pass1" size="20" onchange="pass_validation()"><i id="valid"></i>
+            <br> <br>
+            <input type="checkbox"  name="accept"> I accept the terms and condition
+            <br>
+            <button value="Login">Login</button>
+        </form>
+    </div>
+    <br><br>
+    <div>
+        <img src="res/empty_star.png" onclick="change_star(1)" onmouseover="change_star(1)" onmouseout="change_star(1)" id="star1">
+        <img src="res/empty_star.png" onclick="change_star(2)" onmouseover="change_star(2)" onmouseout="change_star(2)" id="star2">
+        <img src="res/empty_star.png" onclick="change_star(3)" onmouseover="change_star(3)" onmouseout="change_star(3)" id="star3">
+        <img src="res/empty_star.png" onclick="change_star(4)" onmouseover="change_star(4)" onmouseout="change_star(4)" id="star4">
+        <img src="res/empty_star.png" onclick="change_star(5)" onmouseover="change_star(5)" onmouseout="change_star(5)" id="star5">
+    </div>
+    <br><br>
+    <div>
+        <input type="text" onfocus="resize()" onblur="resizex2()" id="search">
+        <button type="button">Search</button>
+    </div>
+
+</body>
+
+</html>

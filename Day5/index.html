@@ -10,7 +10,7 @@
         }
     </style>
 </head>
-<body onload="cache()">
+<body style="text-align:center" onload="cache()">
     <div>
         <form onsubmit="save_login()">
         <label for="UserName">UserName: </label>
@@ -21,7 +21,19 @@
             <br> <br>
             <button value="Login">Login</button>
         </form>
-        <script></script>
     </div>
+    <br><br>
+    <button onclick="showDataItems()">show Data of three students </button>
+    <div id = "show"></div>
+    <br><br>
+    <input type="text" id = "text" placeholder="enter the user ID">
+    <button onclick="showData()"> show user information </button>
+    <br><br>
+    <label>choose the name: </label>
+    <select name ="studentname " id = "stdname" ></select>
+    <br><br>
+    <div id = "div"></div>
+    <div id = "div2"></div>
+    <div id = "div3"></div>
 </body>
 </html>

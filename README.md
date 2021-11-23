@@ -10,4 +10,4 @@ Github pages:
 <br>
 [Day3](https://johnm28.github.io/ITI_JS/Day3/)
 <br>
-[day4](https://johnm28.github.io/ITI_JS/Day4/)
+[Day4](https://johnm28.github.io/ITI_JS/Day4/)

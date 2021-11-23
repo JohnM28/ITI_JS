@@ -9,3 +9,5 @@ Github pages:
 [Day2](https://johnm28.github.io/ITI_JS/Day2/)
 <br>
 [Day3](https://johnm28.github.io/ITI_JS/Day3/)
+<br>
+[day4](https://johnm28.github.io/ITI_JS/Day4/)
